@@ -30,13 +30,13 @@
 import os
 
 def list_files_in_folder(folder):
-    try:
-        files = os.listdir(folder)
-        return files,None
-    except FileNotFoundError:
-        return None , "Folder not found" + folder
-    except PermissionError:
-        return None, "Access denied for folder" + folder
+   try:
+      files = os.listdir(folder)
+      return files,None
+   except FileNotFoundError:
+      return None , "Folder not found" + folder
+   except PermissionError:
+      return None, "Access denied for folder" + folder
 
 
 
@@ -54,4 +54,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+   main()
